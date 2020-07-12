@@ -7,11 +7,11 @@
 
 int main() 
 {
-    int a, b;
-    int i;
+    int a,i,b;
     scanf("%d\n%d", &a, &b);
+    
     for(i=a;i<=b;i++)
-    {
+     {
         if(i==1)
             printf("one\n");
         else if(i==2)
@@ -34,10 +34,8 @@ int main()
             printf("even\n");
         else 
             printf("odd\n");
-    }
-  	
-
-    return 0;
+     }
+   return 0;
 }
 
 
