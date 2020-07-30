@@ -1,22 +1,21 @@
+#include <assert.h>
+#include <limits.h>
+#include <math.h>
+#include <stdbool.h>
+#include <stddef.h>
+#include <stdint.h>
 #include <stdio.h>
-#include<math.h>
+#include <stdlib.h>
+#include <string.h>
 
-void update(int *a,int *b) {
-    // Complete this function   
-    int *c= *a + *b ;
-    printf("%d\n",c);
-    int *d= abs(*a - *b) ;
-    printf("%d",d);
-}
-
-int main() {
-    int a, b;
-    int *pa = &a, *pb = &b;
-    
-    scanf("%d %d", &a, &b);
-    update(pa, pb);
-    
-
-    return 0;
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    for(int i=1; i<=10; i++)
+    {
+        printf("%d x %d = %d\n",n,i,n*i);
+    }
+  return 0;
 }
 
