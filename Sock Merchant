@@ -12,6 +12,8 @@
 char* readline();
 char** split_string(char*);
 
+
+
 // Complete the sockMerchant function below.
 int sockMerchant(int n, int ar_count, int* ar) 
 {  
@@ -32,6 +34,9 @@ int sockMerchant(int n, int ar_count, int* ar)
   }
   return count;
 }
+
+
+
 
 int main()
 {
