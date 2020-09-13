@@ -4,7 +4,10 @@
         {
             return;
         }
-        printf("%d ",root->data);
-        preOrder(root->left);
-        preOrder(root->right);
+        else
+        {  
+         printf("%d ",root->data);
+         preOrder(root->left);
+         preOrder(root->right);
+        }
     }
