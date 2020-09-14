@@ -1,13 +1,14 @@
- void preOrder(Node *root) 
-    {
-        if(root==NULL)
-        {
-            return;
-        }
-        else
-        {  
-         printf("%d ",root->data);
-         preOrder(root->left);
-         preOrder(root->right);
-        }
-    }
+
+//Using Recursion
+
+
+void postOrder( struct node *root)
+{
+   if(root==NULL)
+   {
+       return;
+   }
+   postOrder(root->left);
+   postOrder(root->right);
+   printf("%d ",root->data);
+}
